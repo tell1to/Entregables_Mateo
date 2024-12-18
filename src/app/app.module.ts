@@ -16,6 +16,8 @@ import { FormsNGComponent } from './components/forms-ng/forms-ng.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
+import { CarouselModule } from 'primeng/carousel';  // Importar PrimeNG Carousel
+import { TagModule } from 'primeng/tag';
 
 
 
@@ -44,7 +46,9 @@ import { FormsModule } from '@angular/forms';
     AvatarModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
+    CarouselModule,
+    TagModule
 
 
   ],
