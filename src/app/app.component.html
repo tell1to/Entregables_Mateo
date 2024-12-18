@@ -1,0 +1,34 @@
+<div class="card shadow-lg bg-gradient-to-r from-blue-800 to-purple-600 p-4 rounded-xl">
+    <p-toolbar 
+        styleClass="bg-transparent shadow-lg"
+        [style]="{ 
+          'border-radius': '2rem', 
+          'background-image': 'linear-gradient(45deg, #731bdd, #1815a8)' }">
+        <ng-template pTemplate="start">
+            <button 
+                class="p-link inline-flex justify-content-center align-items-center text-white h-10 w-10 rounded-full hover:bg-gray-700 transition-all duration-300"
+                [routerLink]="['/home']">
+                <i class="pi pi-home text-xl"></i>
+            </button>
+        </ng-template>
+
+        <ng-template pTemplate="center">
+            <div class="flex items-center justify-center gap-4">
+                <h2 class="text-white font-semibold text-lg"><i>Bienvenido a mi proyecto</i></h2>
+            </div>
+        </ng-template>
+
+        <ng-template pTemplate="end">
+            <div class="flex items-center gap-2">
+                <p-avatar 
+                    image="https://th.bing.com/th/id/R.6b0022312d41080436c52da571d5c697?rik=Ql6UUNosrWAY0w&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fpng-user-icon-icons-logos-emojis-users-2400.png&ehk=8agkVrs8bo9zafVF9Qk4%2bFqv5IwaEZrb8DwX%2ftfJtNc%3d&risl=&pid=ImgRaw&r=0" 
+                    shape="circle" size="large" class="border-radius-10px"  />
+                <span class="font-bold text-white text-lg">
+                    <p>Mateo Murillo</p>
+                </span>
+            </div>
+        </ng-template>
+    </p-toolbar>
+</div>
+
+<router-outlet></router-outlet>
